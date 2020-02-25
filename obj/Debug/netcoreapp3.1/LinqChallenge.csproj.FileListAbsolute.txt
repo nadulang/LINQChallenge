@@ -1,0 +1,13 @@
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/LinqChallenge
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/LinqChallenge.deps.json
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/LinqChallenge.runtimeconfig.json
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/LinqChallenge.runtimeconfig.dev.json
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/LinqChallenge.dll
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/LinqChallenge.pdb
+/Users/gigaming/Projects/LinqChallenge/obj/Debug/netcoreapp3.1/LinqChallenge.csprojAssemblyReference.cache
+/Users/gigaming/Projects/LinqChallenge/obj/Debug/netcoreapp3.1/LinqChallenge.AssemblyInfoInputs.cache
+/Users/gigaming/Projects/LinqChallenge/obj/Debug/netcoreapp3.1/LinqChallenge.AssemblyInfo.cs
+/Users/gigaming/Projects/LinqChallenge/obj/Debug/netcoreapp3.1/LinqChallenge.dll
+/Users/gigaming/Projects/LinqChallenge/obj/Debug/netcoreapp3.1/LinqChallenge.pdb
+/Users/gigaming/Projects/LinqChallenge/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gigaming/Projects/LinqChallenge/obj/Debug/netcoreapp3.1/LinqChallenge.csproj.CopyComplete
