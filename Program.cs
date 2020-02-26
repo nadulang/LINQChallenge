@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.IO.Compression;
+using System.Net;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -132,13 +133,72 @@ public class Placement
 
             //All purchases by Ari
             // var ari = listOrders.Where( l => l.customer.name.ToLower() == "ari").Sum( b => b.items.Sum( p => p.qty * p.price));
+            // Console.Writeline("All purchases by Ari: ");
             // Console.Write(String.Join(", ", ari));
 
             //Grand Total
-            var GrandTotal = listOrders.GroupBy( m => m.customer.name).Select(x => new {ppl = x. } ))
+            // var GrandTotal = listOrders.GroupBy( m => m.customer.name)
+            // .Select(x => new {name = x.First().customer.name, total = x.Select(l => l.items.Sum(p => p.qty * p.price)).Sum()})
+            // .Where(k => k.total <300000).Select(w => $" {w.name}") ;
+            // Console.Write(String.Join(", ", GrandTotal));
            
             
-        }
+
+
+            //Nomor 3
+            var jsonfileinventories = File.ReadAllText(@"/Users/gigaming/Projects/LinqChallenge/inventories.json");
+            var listInv = JsonConvert.DeserializeObject<List<Inventories>>(jsonfileinventories);
+
+            // items in meeting room
+            // var it = listInv.Where(r => r.placement.name.ToLower() == "meeting room").
+            //                 Select(z => z.tags.First());
+           
+            // var jadi = JsonConvert.SerializeObject(it);
+            // File.WriteAllText(@"/Users/gigaming/Projects/LinqChallenge/items.json", jadi);
+            // Console.WriteLine("Items that in the Meeting room: ");
+            // Console.WriteLine(String.Join(", ", jadi));
+            
+            // Console.WriteLine("please check the items.json file");
+
+            //electronics
+            // var electronics = listInv.Where( u => u.type.ToLower() == "electronic").
+            //                   Select(q => q.tags.First());
+            // var elitems = JsonConvert.SerializeObject(electronics);
+            // File.WriteAllText(@"/Users/gigaming/Projects/LinqChallenge/electronic.json", elitems);
+            // Console.WriteLine("Electronic items: ");
+            // Console.WriteLine(String.Join(", ", elitems));
+           
+            // Console.WriteLine("please check the eletronic.json file");
+
+            // furnitures
+            // var furnitures = listInv.Where(y => y.type.ToLower() == "furniture").
+            //                  Select(f => f.tags.First());
+            // var furitems = JsonConvert.SerializeObject(furnitures);
+            // File.WriteAllText(@"/Users/gigaming/Projects/LinqChallenge/furniture.json", furitems);
+            // Console.WriteLine("Furniture items: ");
+            // Console.WriteLine(String.Join(", ", furitems));
+            
+            // Console.WriteLine("please check the furniture.json file");
+
+            // purchased at 16 January 2020
+            // var purchased16 = listInv.Where( s => s.purchased_at >= 1579190471).Select( c => c.tags.First());
+            // var purchaseditems = JsonConvert.SerializeObject(purchased16);
+            // File.WriteAllText(@"/Users/gigaming/Projects/LinqChallenge/purchased-at-2020-01-16.json", purchaseditems);
+            // Console.WriteLine("purchased items: ");
+            // Console.WriteLine(String.Join(", ", purchaseditems));
+            // Console.WriteLine("please check the purchased-at-2020-01-16.json file");
+
+            // all items that is brown color 
+            // var brownitems = listInv.Where(v => v.tags.Contains("brown")).Select(b => b.tags.First());
+            // var brownstuffs = JsonConvert.SerializeObject(brownitems);
+            // File.WriteAllText(@"/Users/gigaming/Projects/LinqChallenge/all-browns.json", brownstuffs);
+            // Console.WriteLine("please check the all-browns.json file");
+
+
+
+
+
+        } 
 
         
                             
